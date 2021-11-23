@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Table</class>
+ <widget class="QDialog" name="Table">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Database Viewer</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(24, 24, 24);</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>951</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="layout_Search">
+    <item>
+     <widget class="QLabel" name="label_Search">
+      <property name="styleSheet">
+       <string notr="true">font: 63 11pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Your research</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="layout_Options">
+      <item>
+       <widget class="QLineEdit" name="lineEditSearch">
+        <property name="styleSheet">
+         <string notr="true">font: 63 8pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Research</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox">
+        <property name="styleSheet">
+         <string notr="true">font: 63 8pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>UID</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Author</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Name</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Type</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Created</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QGridLayout" name="grid_Database_2">
+      <item row="1" column="0">
+       <widget class="QListWidget" name="listWidget_UID_2">
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QListWidget" name="listWidget_Type_2">
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="label_Author_2">
+        <property name="styleSheet">
+         <string notr="true">font: 63 11pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Author</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QListWidget" name="listWidget_Created_2">
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QListWidget" name="listWidget_Name_2">
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="5">
+       <widget class="QListWidget" name="listWidget_Searched_2">
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_UID_3">
+        <property name="styleSheet">
+         <string notr="true">font: 63 11pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>UID</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="label_Type_2">
+        <property name="styleSheet">
+         <string notr="true">font: 63 11pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Type</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="5">
+       <widget class="QLabel" name="label_Searched_2">
+        <property name="styleSheet">
+         <string notr="true">font: 63 11pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Searched</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="label_Name_2">
+        <property name="styleSheet">
+         <string notr="true">font: 63 11pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Name</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QListWidget" name="listWidget_Author_2">
+        <property name="styleSheet">
+         <string notr="true">font: 63 9pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="4">
+       <widget class="QLabel" name="label_Created_3">
+        <property name="styleSheet">
+         <string notr="true">font: 63 11pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Created</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>10</y>
+     <width>231</width>
+     <height>63</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="layout_User">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_UID">
+        <property name="styleSheet">
+         <string notr="true">font: 63 8pt &quot;Segoe UI Semibold&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>UID</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_Created">
+        <property name="styleSheet">
+         <string notr="true">font: 63 8pt &quot;Segoe UI Semibold&quot;;
+color: rgb(255, 255, 255);</string>
+        </property>
+        <property name="text">
+         <string>Created</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item alignment="Qt::AlignHCenter">
+     <widget class="QLabel" name="label_Username">
+      <property name="styleSheet">
+       <string notr="true">font: 63 8pt &quot;Segoe UI Semibold&quot;;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Username</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="button_Logout">
+      <property name="styleSheet">
+       <string notr="true">font: 63 8pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Log out</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>120</y>
+     <width>231</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QPushButton" name="button_View">
+      <property name="styleSheet">
+       <string notr="true">font: 63 8pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>View</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="button_Add">
+      <property name="styleSheet">
+       <string notr="true">font: 63 8pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="button_Update">
+      <property name="styleSheet">
+       <string notr="true">font: 63 8pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Update</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="button_Delete">
+      <property name="styleSheet">
+       <string notr="true">font: 63 8pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Delete</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="button_Refresh">
+      <property name="styleSheet">
+       <string notr="true">font: 63 8pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Refresh</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>350</y>
+     <width>231</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_Infos">
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="styleSheet">
+       <string notr="true">font: 63 8pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>User Informations :</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="styleSheet">
+       <string notr="true">font: 63 8pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>-&gt; Date of creation :</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_Date">
+      <property name="styleSheet">
+       <string notr="true">font: 63 8pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>CreationDate</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">font: 63 8pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>-&gt; Words :</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_Words">
+      <property name="styleSheet">
+       <string notr="true">font: 63 8pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>NumberOfWords</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>260</y>
+     <width>951</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="grid_Database">
+    <item row="0" column="2">
+     <widget class="QLabel" name="label_Name">
+      <property name="styleSheet">
+       <string notr="true">font: 63 11pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Name</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="label_Type">
+      <property name="styleSheet">
+       <string notr="true">font: 63 11pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Type</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLabel" name="label_Author">
+      <property name="styleSheet">
+       <string notr="true">font: 63 11pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Author</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QLabel" name="label_Created_2">
+      <property name="styleSheet">
+       <string notr="true">font: 63 11pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Created</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_UID_2">
+      <property name="styleSheet">
+       <string notr="true">font: 63 11pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>UID</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QListWidget" name="listWidget_UID">
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="5">
+     <widget class="QLabel" name="label_Searched">
+      <property name="styleSheet">
+       <string notr="true">font: 63 11pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Searched</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QListWidget" name="listWidget_Author">
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QListWidget" name="listWidget_Name">
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QListWidget" name="listWidget_Type">
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QListWidget" name="listWidget_Created">
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="5">
+     <widget class="QListWidget" name="listWidget_Searched">
+      <property name="styleSheet">
+       <string notr="true">font: 63 9pt &quot;Segoe UI Semibold&quot;;
+background-color: rgb(52, 52, 52);
+color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
